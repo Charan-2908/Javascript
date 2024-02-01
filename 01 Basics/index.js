@@ -178,7 +178,6 @@ function sum(limit) {
     }
     return sum;
 }
-
 console.log(sum(15))
 
 function calculateGrade(marks) {
@@ -193,6 +192,32 @@ function calculateGrade(marks) {
     if (average < 90) return "B"
     return "A"
 }
-
 const marks = [90, 90, 90];
 console.log(calculateGrade(marks))
+
+
+function showStars(rows) {
+    for (let row = 1; row <= rows; row++){
+        let pattern = ""
+        for (let i = 0; i < row; i++)
+            pattern += "*"
+        console.log(pattern)
+    }
+}
+showStars(5)
+
+
+function showPrimes(limit) {
+    for (let number = 2; number<= limit; number++) {
+
+        let isPrime = true
+        for (let factor = 2; factor < number; factor++){
+            if (number % factor === 0) {
+                isPrime = false
+                break
+            }
+        }
+        if (isPrime) console.log(number)
+    }
+}
+showPrimes(200)
