@@ -171,7 +171,7 @@ function showProperties(obj) {
 
 function sum(limit) {
     let sum = 0;
-    
+
     for (let i = 0; i <= limit; i++) {
         if (i % 3 == 0 || i % 5 == 0)
             sum += i;
@@ -180,3 +180,19 @@ function sum(limit) {
 }
 
 console.log(sum(15))
+
+function calculateGrade(marks) {
+    let sum = 0
+    for(let mark of marks) 
+        sum += mark
+    let average = sum / marks.length
+
+    if (average <= 59) return "Fail"
+    if (average < 70) return "D"
+    if (average < 80) return "C"
+    if (average < 90) return "B"
+    return "A"
+}
+
+const marks = [90, 90, 90];
+console.log(calculateGrade(marks))
