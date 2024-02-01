@@ -38,7 +38,6 @@ console.log(selectedColors)
 function greet(name){
     console.log('Hello ' + name)     //function
 }
-
 greet('Charan')
 
 
@@ -144,3 +143,40 @@ function showNumbers (number) {
 }
 (showNumbers(10))
 
+function countTruthy(array) {
+    let count = 0
+    for (let value of array)
+        if (value)
+            count++
+    return count
+}
+
+const array= [0, 1, 2, 3, undefined, null]
+console.log(countTruthy(array))
+
+
+const movie = {
+    title : 'a',
+    releaseYear : 2018,
+    rating : 4.5,
+    director : "unknown"
+}
+showProperties(movie)
+
+function showProperties(obj) {
+    for (key in obj) 
+        if (typeof obj[key] === "string") 
+            console.log(key, obj[key]);
+}
+
+function sum(limit) {
+    let sum = 0;
+    
+    for (let i = 0; i <= limit; i++) {
+        if (i % 3 == 0 || i % 5 == 0)
+            sum += i;
+    }
+    return sum;
+}
+
+console.log(sum(15))
