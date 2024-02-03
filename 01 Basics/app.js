@@ -41,8 +41,34 @@ const yupp = "Charan's courses are the best"
 console.log(yup);
 console.log(yupp);
 
+
 const name = "Gujjari"
 const lasttName = "Charan"
 let fullName = name + ' ' + lasttName
-
 console.log("Hello..! Your full name is: " + fullName);
+
+
+const website = "youtube"
+const url = "https://www." + website + ".com"
+console.log(url);
+
+
+const street = "LB Nagar"
+const country = "India"
+let fullMailingAddress = street + ' ' + country
+console.log(fullMailingAddress);
+
+
+const number = 22
+const number2 = 2.342
+const number3 = "2.342"
+console.log(number);
+console.log(number2);
+console.log(number3);
+
+let number5 = 40 
+number5 += 5
+number5 += 5
+number5 += 5
+number5 += 5
+console.log(number5)
