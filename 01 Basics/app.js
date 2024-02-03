@@ -66,6 +66,7 @@ console.log(number);
 console.log(number2);
 console.log(number3);
 
+
 let number5 = 40 
 number5 += 5
 number5 += 5
