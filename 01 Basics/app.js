@@ -41,3 +41,8 @@ const yupp = "Charan's courses are the best"
 console.log(yup);
 console.log(yupp);
 
+const name = "Gujjari"
+const lasttName = "Charan"
+let fullName = name + ' ' + lasttName
+
+console.log("Hello..! Your full name is: " + fullName);
