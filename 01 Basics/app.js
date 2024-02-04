@@ -101,3 +101,5 @@ remainingPlates += 1
 let message = "There are" + " " + remainingPlates + " " + "plates available"  
 
 console.log(message);
+
+
