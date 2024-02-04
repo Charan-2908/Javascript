@@ -72,4 +72,32 @@ number5 += 5
 number5 += 5
 number5 += 5
 number5 += 5
+number5 -= 5
+number5++
+number5++
+number5--
+number5--
+number5 *= 2
+number5 /= 2
 console.log(number5)
+
+
+const score1 = 89
+const score2 = 55
+const score3 = 81
+
+let total = score1 + score2 + score3
+let average = (score1 + score2 + score3) / 3
+
+console.log("Total score is:", total);
+console.log("Average score is:", average);
+
+
+const plates = 20
+const people = 7
+let remainingPlates = plates % people
+remainingPlates += 1
+
+let message = "There are" + " " + remainingPlates + " " + "plates available"  
+
+console.log(message);
