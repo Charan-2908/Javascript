@@ -218,3 +218,82 @@ console.log(car.make);
 console.log(car.colors[0]);
 car.drive()
 car.stop()
+
+
+const value = 2 < 1
+if (value) {
+    console.log("Hello");
+}
+else {
+    console.log("People");
+}
+
+
+const namee = 'bober'
+const age = 34
+
+if (namee !== 'peterrr' && age === 34) {
+    console.log("Details are correct");
+} else console.log("Wrong details")
+
+const dice = 3
+
+switch (dice) {
+    case 1:
+        console.log("One");
+        break
+    case 2:
+        console.log("Two");
+        break
+    case 3:
+        console.log("Three");
+        break
+    case 4:
+        console.log("Four");
+        break
+    default:
+        console.log("You didnt roll the dice..!");
+}
+
+
+const person1 = {
+    name : "shiva",
+    age : 24,
+    status : "resident"
+}
+
+const person2 = {
+    name : "Ram",
+    age : 16,
+    status : "tourist"
+}
+
+if (person1.age >= 18 && person1.status === 'resident') {
+    console.log('You can cast a Vote');
+} else {
+    console.log("You cannot vote");
+}
+
+
+let amount = 5 
+while (amount > 0) {
+    console.log("I have " + amount + " dollars and I'm going to mall");
+    amount--
+}
+
+
+let money = 5
+do {
+    console.log("You have " + money + " dollars");
+    money++
+} while (money < 10)
+
+
+let k 
+for (k = 0; k < 10; k++) {
+    console.log('and the number is:',k);
+}
+
+for (let number = 10; number >= 0; number--) {
+    console.log('The number is:', number);
+}
