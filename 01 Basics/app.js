@@ -168,3 +168,53 @@ const height = calculate(230)
 
 dimensions = [width, height]
 console.log(dimensions);
+
+
+const calculateTotal = function anyFunction(subTotal, tax) {
+    return subTotal + tax
+}
+
+const order1 = calculateTotal(12, 34)
+const order2 = calculateTotal(23, 67)
+const order3 = calculateTotal(456, 334)
+
+console.log(order1, order2, order3);
+
+
+const person = {
+    name: "John",
+    Lastname : 'Peters',
+    age: 30,
+    education: false,
+    married: true,
+    siblings: ['anna', 'susa', 'peter'],
+    greeting : function() {
+        console.log("Hello my name is John");
+    }
+}
+
+person.name = "Bob"
+console.log(person.name);
+
+console.log(person);
+console.log(person.siblings);
+person.greeting()
+
+const car = {
+    make: "tata",
+    model: "ev",
+    year: 2020,
+    colors: ["yellow","blue","cement"],
+    hybrid: true,
+    drive: function() {
+        console.log("Now car is ready to go..!");
+    },
+    stop: function() {
+        console.log("Car has stopped..!");
+    } 
+}
+
+console.log(car.make);
+console.log(car.colors[0]);
+car.drive()
+car.stop()
