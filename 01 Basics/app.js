@@ -125,3 +125,46 @@ console.log(favourite);
 
 fruits[4] = 'watermelon'
 console.log(fruits);
+
+
+function demo() {
+    console.log('Hello there charan');
+    console.log('Hello there aditya');
+    console.log('Hello there chintu');
+}
+demo()
+
+function demo3() {
+    console.log("Hello there Charan");
+}
+demo3()
+function demo1() {
+    console.log("Hello there Chintu");
+}
+demo1()
+function demo2() {
+    console.log("Hello there Cherry");
+}
+demo2()
+
+
+function greet(username) {
+    console.log("Hello there", username);
+    console.log("Hello there " + username);
+}
+greet("Junaid");
+
+function greet1(userName) {
+    return "hello there " + userName
+}
+console.log(greet1("Maaz"));
+
+function calculate(value) {
+    return value * 2.54
+}
+console.log(calculate(200));
+const width = calculate(100) 
+const height = calculate(230) 
+
+dimensions = [width, height]
+console.log(dimensions);
