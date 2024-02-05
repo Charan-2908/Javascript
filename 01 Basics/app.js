@@ -99,5 +99,29 @@ let remainingPlates = plates % people
 remainingPlates += 1
 
 let message = "There are" + " " + remainingPlates + " " + "plates available"  
-
 console.log(message);
+
+let helo ;
+console.log(typeof helo);
+let helo1 = null
+console.log(typeof helo1);
+let helo2 = true
+console.log(typeof helo2);
+
+
+const friends = ['john', 'peter', 'chintu', 'aditya', undefined, null, 67, true]
+console.log(friends);
+console.log(typeof friends[5]);
+console.log(friends.length);
+
+friends[4] = "Charan"
+console.log(friends);
+console.log(friends[4]);
+
+
+fruits = ['apple', 'banana', 'grapes', 'orange', 67]
+favourite = fruits[0]
+console.log(favourite);
+
+fruits[4] = 'watermelon'
+console.log(fruits);
