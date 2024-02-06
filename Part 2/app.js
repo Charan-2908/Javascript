@@ -122,3 +122,29 @@ console.log({
 const valuee = 2 < 1
 value ? console.log("True") : console.log("False");
 
+const globalNumber = 5
+
+function add(num1, num2) {
+    const globalNumber = 10
+    result = num1 + num2 + globalNumber
+    return result
+}
+console.log(add(2,3));
+
+
+function morning(name) {
+    return `Good morning...! ${name.toLocaleUpperCase()}`
+}
+
+function afternoon(name) {
+    return `Good afternoon...! ${name.repeat(2)}`
+}
+
+function greet(name, cb) {
+    const myName = "John"
+    console.log(`${cb(name)}, My name is ${myName}.`);
+}
+greet("Bobo", morning)
+greet("Peter", afternoon)
+
+
