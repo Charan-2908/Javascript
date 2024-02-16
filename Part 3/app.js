@@ -27,3 +27,7 @@ const names = people.map(function(person) {
 
 document.body.innerHTML = names.join('')
 console.log(names);
+
+const youngPeople = people.filter(function(person){
+
+})
