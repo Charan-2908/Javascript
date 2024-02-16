@@ -7,10 +7,10 @@ const people = [
 ]
 
 people.forEach(function(item) {
-    console.log(item.position.toUpperCase());
+    console.log(item.position.toLowerCase());
 })
 
 function showPerson(people) {
     console.log(people.position.toUpperCase());
 }
-people.forEach(showPerson)
+people.forEach(showPerson);
