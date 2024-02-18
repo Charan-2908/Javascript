@@ -71,5 +71,27 @@ const updatedStudents = students.map(function(student){
     student.role = 'student'
     return student
 })
-
 console.log(updatedStudents);
+
+const highScores = students.filter(function(student){
+    // if (student.score >= 80){
+    //     return student
+    // }
+
+    // if (student.score >= 80) return student
+
+    return student.score >= 80
+})
+console.log(highScores);
+
+const specificIds = students.find(function(student){
+    return student.id == 2
+})
+console.log(specificIds);
+
+const averageScores = students.reduce(function(scoresTotal, student){
+    // console.log(student);
+    // console.log(scoresTotal);
+    return scoresTotal + student.score
+}, 0)/students.length
+console.log(averageScores);
