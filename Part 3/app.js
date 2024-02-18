@@ -62,3 +62,14 @@ const total = employee.reduce(function(acc, curr){
     return acc
 },0)
 console.log(total);
+
+
+console.log(students);
+
+const updatedStudents = students.map(function(student){
+    // console.log(student);
+    student.role = 'student'
+    return student
+})
+
+console.log(updatedStudents);
